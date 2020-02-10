@@ -131,7 +131,7 @@ if cwd == '/app' or cwd[:4] =='/tmp':
     #разрешены все заголовки хостов
     ALLOWED_HOSTS = ['learning-log-kb1.herokuapp.com']
 
-    DEBUG - False
+    DEBUG = False
 
     #конфигурация статистических ресурсов
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
