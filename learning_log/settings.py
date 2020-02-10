@@ -25,7 +25,7 @@ SECRET_KEY = 'en4%^*whjr5&r#9s^4i2yut-g6&qj8vfpcoufzan5c9ru5_lol'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -61,7 +61,9 @@ ROOT_URLCONF = 'learning_log.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            os.path.join(BASE_DIR, 'learning_log/templates')
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
